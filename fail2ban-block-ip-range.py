@@ -70,7 +70,7 @@ for line in Lines:
 #
 # PART 4: call fail2ban  (you can also call IPTABLES directly)
 #
-fail2ban_command = "fail2ban-client set postfix-sasl banip "
+fail2ban_command = "fail2ban-client set zimbra-smtp banip "
 
 for ip in finalList:
   banIP_command = fail2ban_command + ip
